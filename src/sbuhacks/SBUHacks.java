@@ -111,7 +111,6 @@ public class SBUHacks extends Application {
         ctimeline.getKeyFrames().add(new KeyFrame(Duration.millis(speed), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                System.out.println(speed);
                 for(int i=0; i < collidables.size(); i++){
                     Collidables c=collidables.get(i);
                     boolean intersects=trait.getShape().intersects(c.getShape().getBoundsInParent());
